@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #E6E6E6;
+  font-family: 'Montserrat', sans-serif;
+}
+/****** Header *******/
+header{
+  top:0; left :0; right:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+img {
+    width: 55%;
+    height: 25%;
+}
+
+.nav {
+  display: inline-block;
+  width: 150%;
+}
+
+.nav-items {
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  padding-right: 50px;
+}
+
+.nav-item {
+  display: inline-block;
+
+  margin: 0px 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #407088;
+  font-weight: 600;
+}
+
+.nav-color{
+  background-color: #407088;
+  color: #E6E6E6;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* Style général du formulaire */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  /*border: 1px solid #ccc;*/
+  border-radius: 5px;
+  background-color: #E6E6E6;
+}
+
+/* Style des champs de formulaire */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form input[type="tel"],
+
+form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #E6E6E6;
+  border-radius: 3px;
+  box-sizing: border-box; /* Pour inclure le padding et le border dans la largeur déclarée */
+
+}
+/* Style du bouton de soumission */
+form input[type="submit"],form input[type="button"] {
+  width: 46%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #407088;
+  color: #E6E6E6;
+  cursor: pointer;
+}
+
+/* Style du bouton de soumission lorsqu'il est survolé */
+form input[type="submit"]:hover,form input[type="button"]:hover {
+  background-color: #407088;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#nom-prenom {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #333;
+}
+
+#info-prof {
+  margin-top: 10px;
+  color: #666;
+}
+
+.info-formation,
+.info-experience,
+.info-competence,
+.info-langue {
+  margin-top: 20px;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.formation,
+.experience,
+.competence {
+  margin: 0;
+  padding: 0;
+  color: rgb(0, 0, 0);
+}
+
+.info-formation p,
+.info-experience p,
+.info-competence p {
+  margin-bottom: 10px;
+}
+
+.info-formation p:last-child,
+.info-experience p:last-child,
+.info-competence p:last-child {
+  margin-bottom: 0;
+}
+
+
+.info-formation p,
+.info-experience p,
+.info-competence p {
+  padding-left: 20px;
+}
+
+.info-formation p,
+.info-experience p,
+.info-competence p {
+  position: relative;
+}
+
+.info-formation p::before,
+.info-experience p::before,
+.info-competence p::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
